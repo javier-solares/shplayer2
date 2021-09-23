@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a2b3da0c65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <main class="player">
+        <div class="header">
+            <a href="#" class="button" id="abrir">
+                <i class="fas fa-bars"></i>
+                <!-- <span class="sr-only">Menu Bar</span> -->
+            </a>
+            <p>SH</p>
+            <a href="#" class="button">
+                <label>
+                    <input type="checkbox" name="theme">
+                    <!-- <span class="btn sr-only">Search</span> -->
+                    <i class="fas fa-moon"></i>
+                </label>
+            </a>
+        </div>
+        <div id="miModal" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header flex">
+                        <h2>LISTADO DE CANCIONES</h2>
+                        <span class="close" id="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>"Haciendo que me amas", "Te deseo lo mejor" </li>
+                            <li> "Amorfada", "Ignorantes" </li>
+                            <li>"Si estuviesemos juntos", "Bye me fui"</li>
+                            <li>"Te soñe", "Enemigos"</li>
+                            <li>"Con la falta que me haces", "Pero te conoci"</li>
+                            <li>"Dejate llevar", "Quedate conmigo"</li>
+                            <li>"Befor you go", "Someone you love", "Grace"</li>
+                            <li>"Forever", "Leaving my love", "When the party"</li>
+                            <li>"Bruises", "Dont get me wrong", "Faded", "One"</li>
+                            <li>"Rush", "Mercy", "Too good at goodbyes""</li>
+                            <li>"Im not only one" "Stay with me", "Law me down"</li>
+                            <li> "Locked away", "Your head", "What is love", "Iris"</li>
+                            <li> "Someone like you", "Bleed out", "Circles" </li>
+                            <li> "Stay", "say something", "Jealous"</li>
+                            <li>"Aunque ya no estes aqui", "Que bonito fue"</li>
+                            <li> "Me vas a ver", "Luna llena", "Tal vez" </li>
+                            <li> "Di que sientes tu", "Mas que amigos"</li>
+                            <li> "La ultima vez", "Nunca te olvide", "Mi suerte" </li>
+                            <li>"Enamorate de alguien mas", "Quien"</li>
+                            <li>"Si hubieras querido", "Saturno", "Recuerdame"</li>
+                            <li> "Tanto", "Cero", "Dibujas", "Mi teatro"</li>
+                            <li> "Emocional", "Los charcos", "Posdata"</li>
+                            <li>"Cheque al portamor vencido", "La promesa"</li>
+                            <li> "Hoja en blanco", "Viernes 13"</li>
+                            <li> "Mi persona favorita", "Ese no se que"</li>
+                            <li> "He pensado en llamarte"</li>
+                            <li> "My love", "Love of my life", "Memory"</li>
+                            <li> "Cant help falling in love", "Ill wait","Stole the show", "Raging", "This Town","Gwiyomi", "Happier"</li>
+                            <li> "Show me love", "In your eyes","cien años","historia de amor","de que me sirve el cielo"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="images/p1.jpg" alt="album" id="image" class="image">-->
+        <a href="./q.mp4" target="_blank"><video src="./images/1.mp4" autoplay preload="preload" muted loop alt="video" id="vid" class="vid"></video>
+        </a>
+        <div class="information">
+            <h1 id="playlist_status"></h1>
+            <p id="playlist_artist"></p>
+        </div>
+        <div class="progress">
+            <div class="progress-time">
+                <span id="currenttimetext" class="left">00:00</span>
+                <span id="durationtimetext" class="right">00:00</span>
+            </div>
+            <div class="progress-bar">
+                <input type="range" name="" id="seekslider" class="seekslider" min="0" max="100" value="0" step="1">
+            </div>
+        </div>
+        <ul class="buttons">
+            <span id="random" class="shuffle button button-sm">
+                <i class="fas fa-random fa-sm"></i>
+            </span>
+            <span id="prevbtn" class="prev button button-md">
+                <i class="fas fa-step-backward"></i>
+            </span>
+            <span id="playpausebtn" class="playpause button button-lg">
+                <i class="fas fa-play fa-lg"></i>
+                <i class="fas fa-pause fa-lg"></i>
+            </span>
+            <span id="nextbtn" class="next button button-md">
+                <i class="fas fa-step-forward"></i>
+            </span>
+            <span id="repeat" class="loop button button-sm">
+                <i class="fas fa-circle-notch fa-sm"></i>
+            </span>
+        </ul>
+        <div class="bar"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>
